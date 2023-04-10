@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/08 18:28:24 by plau              #+#    #+#             */
-/*   Updated: 2023/04/08 19:01:05 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/10 13:23:14 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,14 @@
 class Zombie
 {
 	public:
-		Zombie();
+		Zombie(std::string name);
 		~Zombie();
 		void			annouce(void);
-		std::string		*newZombie(std::string name);
-		void			randomChump(std::string name);
-		std::string		getZombieName();
 	private:
 		std::string		_zombieName;
 };
+
+Zombie	*newZombie(std::string name);
+void	randomChump(std::string name);
 
 #endif

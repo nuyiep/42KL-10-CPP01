@@ -6,13 +6,19 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/08 17:00:14 by plau              #+#    #+#             */
-/*   Updated: 2023/04/08 18:12:33 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/10 14:02:32 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
+#include "Zombie.hpp"
 
 int main(void)
 {
-	std::cout << "Hello world" << std::endl;
+	Zombie	*zombie = newZombie("Heap Zombie");
+	zombie->annouce();
+	delete zombie;
+	std::cout << std::endl;
+	randomChump("Stack Zombie");
+	std::cout << std::endl;
+	system("leaks -q brainz");
 }
