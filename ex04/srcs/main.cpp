@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 18:01:50 by plau              #+#    #+#             */
-/*   Updated: 2023/04/12 14:56:53 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/12 15:05:10 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ int main(int ac, char **av)
 		}
 		else
 		{
-			std::cout << "Failed to open input or output file" << std::endl;
+			std::cout << "Failed to open input file" << std::endl;
 		}
 	}
 	return (0);
