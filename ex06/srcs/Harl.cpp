@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 15:01:09 by plau              #+#    #+#             */
-/*   Updated: 2023/04/13 21:05:18 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/14 16:26:27 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,7 @@ void	Harl::complain(std::string level)
 	switch (index)
 	{
 		case 0:
-			this->_debug();
+			this->_debug(); //fallthrough
 		case 1:
 			this->_info();
 		case 2:

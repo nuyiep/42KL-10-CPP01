@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 18:01:50 by plau              #+#    #+#             */
-/*   Updated: 2023/04/12 15:27:27 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/14 16:24:37 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,7 @@ std::string	amend_line(std::string& line, const std::string& s1, const std::stri
 		return ("RAMADAN");
 	}
 	if (line.find(s1) == std::string::npos)
-	{
-		std::cout << "s1 is not found in line" << std::endl;
-		return ("RAMADAN");
-	}
+		return (line);
 	std::size_t pos = line.find(s1);
 	while (pos != std::string::npos)
 	{
@@ -82,6 +79,7 @@ int main(int ac, char **av)
 			std::cout << "Failed to open input file" << std::endl;
 		}
 	}
+	system("leaks -q sed");
 	return (0);
 }
 

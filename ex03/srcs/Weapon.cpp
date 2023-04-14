@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 19:32:45 by plau              #+#    #+#             */
-/*   Updated: 2023/04/11 17:40:47 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/13 22:30:08 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ Weapon::Weapon(void)
 Weapon::Weapon(std::string name)
 {
 	this->_type = name;
-	std::cout << BLUE << "(" << this->_type << " has been created- with name)" << RESET << std::endl;
+	std::cout << BLUE << '(' << this->_type << " has been created- with name)" << RESET << std::endl;
 }
 
 /* Destructor function */

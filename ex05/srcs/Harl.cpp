@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 15:36:15 by plau              #+#    #+#             */
-/*   Updated: 2023/04/13 14:19:15 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/13 20:17:07 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ Harl::~Harl(void)
 {
 	std::cout << GREEN << "Hard has been destroyed" << RESET << std::endl;
 }
-
 
 void	Harl::_debug(void)
 {

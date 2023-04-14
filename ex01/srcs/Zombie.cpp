@@ -6,11 +6,21 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 14:45:21 by plau              #+#    #+#             */
-/*   Updated: 2023/04/10 17:37:32 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/10 19:33:43 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
+
+Zombie::Zombie(void)
+{
+	std::cout << "A new zombie " << " has spwaned" << std::endl;
+}
+
+Zombie::~Zombie(void)
+{
+	std::cout << _name << "[" << _index << "] " << "has despawned" << std::endl;
+}
 
 /* Setter function: set zombie name */
 void	Zombie::setName(std::string name)
@@ -21,16 +31,6 @@ void	Zombie::setName(std::string name)
 void	Zombie::setIndex(int index)
 {
 	this->_index = index;
-}
-
-Zombie::Zombie(void)
-{
-	std::cout << "A new zombie " << " has spwaned" << std::endl;
-}
-
-Zombie::~Zombie(void)
-{
-	std::cout << _name << "[" << _index << "] " << "has despawned" << std::endl;
 }
 
 int		Zombie::getIndex(void) const

@@ -6,7 +6,7 @@
 #    By: plau <plau@student.42.kl>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/10 18:58:54 by plau              #+#    #+#              #
-#    Updated: 2023/04/11 15:28:30 by plau             ###   ########.fr        #
+#    Updated: 2023/04/13 20:55:36 by plau             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,9 +35,9 @@ $(NAME):			$(OBJS)
 					$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)	
 
 clean:
-					$(RM) $(OBJS)
+					$(RM) $(OBJS) $(OBJS_DIR)
 
-flcean: 			clean
+fclean: 			clean
 					$(RM) $(NAME)
 
 re: 				fclean all

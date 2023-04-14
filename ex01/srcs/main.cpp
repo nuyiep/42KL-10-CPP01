@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 14:45:19 by plau              #+#    #+#             */
-/*   Updated: 2023/04/10 17:37:53 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/13 22:14:01 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,6 @@ int main(int ac, char **av)
 		std::cout << "Please enter in the following format" << std::endl;
 		std::cout << "./horde [Number of zombies] [Zombie horde Name]" << std::endl;
 	}
-	// system("leaks -q horde");
+	system("leaks -q horde");
 	return (0);
 }

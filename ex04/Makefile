@@ -6,7 +6,7 @@
 #    By: plau <plau@student.42.kl>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/11 18:01:32 by plau              #+#    #+#              #
-#    Updated: 2023/04/12 14:54:34 by plau             ###   ########.fr        #
+#    Updated: 2023/04/13 20:55:15 by plau             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ CXX				= 	c++
 RM				= 	rm -rf
 MKDIR			= 	mkdir -p
 CXXFLAGS		= 	-Wall -Wextra -Werror -std=c++98 -pedantic
-CXXFLAGS		+=  -g3 -fsanitize=address
+# CXXFLAGS		+=  -g3 -fsanitize=address
 SRCS_FILES		= 	main
 SRCS			= 	$(addprefix $(SRCS_DIR), $(addsuffix .cpp, $(SRCS_FILES)))
 OBJS			= 	$(addprefix $(OBJS_DIR), $(addsuffix .o, $(SRCS_FILES)))
@@ -33,10 +33,10 @@ $(NAME):			$(OBJS)
 					$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)	
 
 clean:
-					$(RM) $(OBJS)
+					$(RM) $(OBJS) $(OBJS_DIR)
 
-flcean: 			clean
-					$(RM) $(NAME)
+fclean: 			clean
+					$(RM) $(NAME) output.txt
 
 re: 				fclean all
 
